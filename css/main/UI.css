@@ -1,0 +1,107 @@
+@import url(/css/variables/variables.css);
+
+/*Inicio del UI*/
+
+.main-UI {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-UI h2 {
+    color: var(--colorAzul);
+    margin-top: 5%;
+}
+
+.info-UI p {
+    margin-bottom: 5%;
+}
+
+
+/*Caja con prototipos en desktop*/
+
+.UI-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "item1-D item2-D item3-D"
+    "item4-D item5-D item6-D"
+    "   .    item7-D    .   "
+    ;
+    gap: 5%;
+}
+
+.UI-imagenes img {
+    max-width:100%;
+}
+
+.item1-D{
+    grid-area: item1-D;
+}
+.item2-D{
+    grid-area: item2-D;
+}
+.item3-D{
+    grid-area: item3-D;
+}
+.item4-D{
+    grid-area: item4-D;
+}
+.item5-D{
+    grid-area: item5-D;
+}
+.item6-D{
+    grid-area: item6-D;
+}
+.item7-D{
+    grid-area: item7-D;
+}
+
+
+/*UI movil*/
+
+.UI-imagenes-M {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "item1-M item2-M item3-M"
+    "item4-M    .    item5-M"
+    ;
+    gap: 5%;
+
+    margin: 10%;
+}
+
+.UI-imagenes-M img{
+    max-width: 60%;
+}
+
+
+
+/*Inicios estilos del header*/
+
+@media screen and (max-width: 600px) {
+    /*Imagenes desktop en movil*/
+    
+    /*Desktop*/
+    .UI-imagenes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .UI-imaganes div {
+        margin-top: 10%;
+    }
+
+    /*Mobile*/
+
+    .UI-imagenes-M {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+
+
+}

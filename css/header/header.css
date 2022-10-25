@@ -1,0 +1,83 @@
+@import url(/css/variables/variables.css);
+
+/*Inicio del header*/
+.header-nav {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colorAzul);
+    position: fixed;
+}
+
+/*Logo de la pagina*/
+.header-nav > .logo {
+    min-width: 17%;
+    margin-left: 2%;
+}
+.header-nav > .logo p{
+    color: var(--colorBlanco);
+    font-weight: bold;
+}
+
+/*Barra de navgeación*/
+
+.nav-header {
+    min-width: 50%;
+    margin-right: 5%;
+}
+
+.nav-header > ul {
+    min-height: 10vh;
+    display: flex;
+    list-style:none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header > ul  a {
+    color: var(--colorBlanco);
+    font-size: .9rem;
+    text-decoration: none;
+    transition: all 1s ;
+}
+.nav-header > ul  a:hover{
+    color: var(--colorNegro);
+}
+
+
+/*Estilos en dispositivos moviles*/
+
+@media screen and (max-width:600px ) {
+    
+    /*Logo*/
+    .header-nav {
+        flex-direction: column;
+    }
+    .header-nav > .logo {
+        min-width: 40%;
+        margin: 5% 0;
+    }
+
+    .header-nav > .logo p {
+        color: var(--colorBlanco);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    /*Barra de navegación*/
+
+    .nav-header {
+        max-width: 100%;
+        margin: 0;
+    }
+    .nav-header ul {
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .nav-header ul a {
+        font-size: .8rem;
+        line-height: 25px;
+    }
+    
+}

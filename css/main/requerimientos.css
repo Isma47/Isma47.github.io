@@ -1,0 +1,51 @@
+@import url(/css/variables/variables.css);
+
+/*Inicia el main*/
+
+/*Titulo principal del main*/
+
+.title-main{
+    display: flex;
+}
+.title-main h1 {
+    color: var(--colorAzul);
+    font-size: 4rem;
+    margin: 8% auto;
+    transition: all 1s;
+}
+.title-main h1:hover {
+    color: var(--colorAzulB);
+}
+
+/*Requerimientos main*/
+.main-requerimientos {
+    max-width: 90%;
+    margin: auto;
+}
+
+/*********************Cliente requerimientos***********************/
+/*Titulos de los requerimientos*/
+.requerimientos-sec h2, p {
+    margin-bottom: 1%;
+}
+
+/*Primera lista de la lista de requerimientos*/
+.lista-requerimientos {
+    max-width: 80%;
+    margin: 3% auto;
+}
+.cliente-requerimientos {
+    margin-bottom: 5%;
+}
+
+.cliente-requerimientos h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    color: var(--colorAzul);
+}
+
+.cliente-requerimientos li {
+    margin-left: 5%;
+    font-size: .8rem;
+}

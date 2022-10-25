@@ -1,0 +1,37 @@
+@import url(/css/variables/variables.css);
+/*Inicio del buyer persona*/
+
+.main-buyerpersona {
+    display: flex;
+    max-width: 90%;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+/*Imagen del buyer persona*/
+
+.buyerpersona-img {
+    max-width: 50%;
+}
+
+.buyerpersona-img img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+/*Texto del buyer persona*/
+
+.info-buyerpersona {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.info-buyerpersona h2 {
+    margin-bottom: 2%;
+    color: var(--colorAzul);
+}
